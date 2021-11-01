@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Kleenomics | Abionkennie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="./css/app.min.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap');
+        * {
+            font-family: 'Zen Old Mincho', serif !important;
+        }
+        
+        .app-android .app-topbar .forward-arrow {
+            float: right;
+            padding-left: 15 px;
+            padding-right: 15 px;
+            margin-right: 10px;
+            width: auto;
+            font-size: 19px;
+            font-weight: 700;
+            text-align: left;
+            line-height: 56px;
+            position: relative;
+        }
+        
+        .app-topbar {
+            background-color: rgb(26, 4, 26) !important;
+            height: 55px !important;
+        }
+        
+        .app-button.right {
+            padding: 0 16 px;
+            height: 56 px;
+            width: 24 px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAQAAADlauupAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQflChkWFiGlplpuAAAAfUlEQVQ4y9WSMQqDUBQE9wcRtLOXX+gBLL5nFOw8jqBHEmurNxapUgWfCMn2M7DLSn8RrK6xGP0CxhG2Des6p6AosGWBfcf6/rckGRajwjCIPP9ukBSOQ6oqhXnGUnpJ4F73KvtRgZQuwmV5E15XF/wWTNPNI7UtNI0Lfjwna3dxTRsD7LwAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjEtMTAtMjVUMjI6MjI6MzMrMDA6MDCyenHBAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIxLTEwLTI1VDIyOjIyOjMzKzAwOjAwwyfJfQAAAABJRU5ErkJggg==);
+            -webkit-background-size: 24 px 24 px;
+            background-size: 24 px 24 px;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-page" data-page="home">
+        <div class="app-topbar">
+            <div class="app-title">Kleenomics</div>
+            <div class="app-button right" data-target="page2"></div>
+        </div>
+        <div class="app-content">
+            <div class="d-flex justify-content-center pt-2" id="spinner">
+                <div class="spinner-border text-primary">Loading</div>
+            </div>
+            <div class="container pt-2" id="mainDiv">
+            </div>
+            <div class="container">
+                <h2>Submit a post</h2>
+                <form class="was-validated">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" class="formcontrol" id="title" placeholder="title of post" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Content:</label>
+                        <textarea name="content" id="content" cols="30" rows="3" class="form-control" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-success" id="create-blog-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="cordova.js"></script>
+    <script src="./js/zepto.js"></script>
+    <script src="./js/stacktrace.min.js"></script>
+
+    <script src="./js/app.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        App.controller('home', function(page) {
+            // put stuff here
+        });
+
+        App.controller('page2', function(page) {
+            // put stuff here
+        });
+
+        try {
+            App.restore();
+        } catch (err) {
+            App.load('home');
+        }
+    </script>
+</body>
+
+</html>

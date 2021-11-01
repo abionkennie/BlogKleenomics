@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleenomics Blogging Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        window.OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+            OneSignal.init({
+                appId: "9945ecdc-190b-43f9-950d-e665e615a5ac",
+                safari_web_id: "web.onesignal.auto.3145fc89-5d6b-4727-99ef-e9ab80472582",
+                notifyButton: {
+                    enable: true,
+                },
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo"><span>K</span>leenomics Blog</a>
+
+        <nav class="navbar">
+            <a href="#banner">home</a>
+            <a href="#add-blog">Add blog</a>
+            <a href="#contact">contact me</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- banner section starts  -->
+
+    <section class="banner" id="banner">
+
+        <div class="content">
+            <h3>explore the nature</h3>
+            <p>read more about health, lifestyles, fashion and Technology</p>
+            <p>Click here to view new post</p>
+            <a href="#new-post" class="btn">New Posts</a>
+        </div>
+
+    </section>
+
+    <!-- banner section ends -->
+
+    <!-- posts section starts  -->
+
+    <section class="container" id="posts">
+
+        <div class="posts-container">
+
+
+        </div>
+
+        <div class="sidebar">
+            <div class="box">
+                <h3 class="title">News Update</h3>
+                <div class="category">
+                    <img src="images/news.jpg" alt="">
+                    <h3 style="font-size:15px !important;">Bitcoin hdlers ‘only halfway’ to selling BTC after new price prediction...<span style="font-weight:bold;">Read More</span></h>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h3 class="title">about me</h3>
+                <div class="about">
+                    <img src="images/self.jpeg" alt="">
+                    <h3>Abiona Kehinde</h3>
+                    <p>A tech professional passionate about healthy life style and creativity</p>
+                    <div class="follow">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3 class="title">categories</h3>
+                <div class="category">
+                    <a href="#"> travel <span>42</span></a>
+                    <a href="#"> photography <span>75</span> </a>
+                    <a href="#"> technology <span>202</span> </a>
+                    <a href="#"> fashion <span>170</span> </a>
+                    <a href="#"> study <span>48</span> </a>
+                    <a href="#"> science <span>39</span> </a>
+                    <a href="#"> music <span>59</span> </a>
+                    <a href="#"> public <span>72</span> </a>
+                    <a href="#"> business <span>32</span> </a>
+                    <a href="#"> sports <span>18</span> </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3 class="title">popular posts</h3>
+                <div class="p-post">
+                    <a href="#">
+                        <h3>The start of a new era for Responsive Web Design</h3>
+                        <span><i class="far fa-clock"></i>25th October, 2021</span>
+                    </a>
+                    <a href="#">
+                        <h3>Ready to Up-level Your Career? 5 Reasons to consider a Udacity Nanodegree</h3>
+                        <span><i class="far fa-clock"></i>21st September, 2021</span>
+                    </a>
+                    <a href="#">
+                        <h3>13 Skincare tips for Clear, Healthier skin</h3>
+                        <span><i class="far fa-clock"></i>12th, October 2021</span>
+                    </a>
+                    <a href="#">
+                        <h3>4 Things that helped me succeed as a Freelancer </h3>
+                        <span><i class="far fa-clock"></i>25th October, 2021</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3 class="title">popular tags</h3>
+                <div class="tags">
+                    <a href="#">travel</a>
+                    <a href="#">photo</a>
+                    <a href="#">science</a>
+                    <a href="#">biology</a>
+                    <a href="#">aliens</a>
+                    <a href="#">nature</a>
+                    <a href="#">mountain</a>
+                    <a href="#">river</a>
+                    <a href="#">camp</a>
+                    <a href="#">landscape</a>
+                    <a href="#">world</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- posts section ends -->
+
+    <!-- contact section starts  -->
+
+    <!-- <section class="contact" id="contact">
+
+        <form action="">
+            <h3>Add new blog</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+
+    </section> -->
+
+    <!-- contact section ends -->
+
+    <!--Add Blog section -->
+    <section class="add-blog" id="add-blog">
+
+        <form action="">
+            <h3>Add new blog</h3>
+            <div class="inputBox">
+                <input type="text" name="title" placeholder="title">
+            </div>
+            <textarea name="content" placeholder="Blog content" id="" cols="30" rows="10"></textarea>
+            <input type="button" value="Submit" class="btn btn-success" id="create-blog-btn">
+
+
+        </form>
+
+
+    </section>
+
+    <section class="new-post" id="new-post">
+        <div>
+            <button id="getNewPosts" class="btn btn-success">Load Post</button>
+            <div id="load-container"></div>
+        </div>
+    </section>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="follow">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="credit">created by <span>Kehinde Abiona</span> | all rights reserved</div>
+
+    </section>
+
+    <!-- footer section ends -->
+    <script src="cordova.js"></script>
+    <script src="./js/zepto.js"></script>
+    <script src="./js/stacktrace.min.js"></script>
+
+    <script src="./js/app.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- <script>
+        App.controller('home', function(page) {
+            // put stuff here
+        });
+
+        App.controller('page2', function(page) {
+            // put stuff here
+        });
+
+        try {
+            App.restore();
+        } catch (err) {
+            App.load('home');
+        }
+    </script> -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-analytics.js"; const firebaseConfig = { apiKey: "AIzaSyBCILjCl-Ao89aEkl2PP_peGvCZLNgjElM",
+        authDomain: "blogkleenomicsapp.firebaseapp.com", projectId: "blogkleenomicsapp", storageBucket: "blogkleenomicsapp.appspot.com", messagingSenderId: "1084849198144", appId: "1:1084849198144:web:c3610829bb08874f3a3ba5", measurementId: "G-RFT1Z9P5KM"
+        }; // Initialize Firebase const app = initializeApp(firebaseConfig); const analytics = getAnalytics(app);
+    </script>
+</body>
+
+</html>

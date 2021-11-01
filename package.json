@@ -1,0 +1,40 @@
+{
+    "name": "io.cordova.hellocordova",
+    "displayName": "BlogKleenomics",
+    "version": "1.0.0",
+    "description": "A kloeenomics blogging app",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "Kleenomics, cleaning services"
+    ],
+    "author": "Kehinde Akinrotoye",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "cordova-android": "^9.1.0",
+        "cordova-browser": "^6.0.0",
+        "cordova-ios": "^6.2.0",
+        "cordova-plugin-androidx": "^3.0.0",
+        "cordova-plugin-androidx-adapter": "^1.1.3",
+        "cordova-plugin-camera": "^5.0.3",
+        "cordova-plugin-firebasex": "^13.0.1",
+        "cordova-plugin-whitelist": "^1.3.5"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-androidx": {},
+            "cordova-plugin-androidx-adapter": {},
+            "cordova-plugin-camera": {
+                "ANDROID_SUPPORT_V4_VERSION": "27.+"
+            }
+        },
+        "platforms": [
+            "android",
+            "ios",
+            "browser"
+        ]
+    }
+}
